@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+venv/
+env/
+.pytest_cache/
+*.sqlite
+*.sqlite3
+*.db
+backend/app/database/*.db
+backend/app/database/*.sqlite
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Executables & Binaries
+*.exe
+cloudflared.exe
+
+# Academic Reports & Generated Documents (kept local, excluded from public repo)
+*.pdf
+TRUTHLENS_AI_PROJECT_REPORT.pdf
+TRUTHLENS_AI_PROJECT_REPORT.md
+TRUTHLENS_AI_PROJECT_REPORT.html
+generate_pdf.py
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
