@@ -1,14 +1,6 @@
 # TruthLens AI: Hallucination Detection in LLM-Generated Answers Using Semantic Entailment Scoring
 
----
 
-
-
----
-
-[![Live Web App](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-purple?style=for-the-badge&logo=github)](https://charanbuilds495.github.io/LLM-Halluciation-Detection/)
-[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![React 18](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61dafb.svg)](https://reactjs.org/)
 [![NLI Model](https://img.shields.io/badge/NLI%20Model-DeBERTa--v3--base-purple.svg)](https://huggingface.co/cross-encoder/nli-deberta-v3-base)
 [![License](https://img.shields.io/badge/License-Academic%20Research-green.svg)]()
