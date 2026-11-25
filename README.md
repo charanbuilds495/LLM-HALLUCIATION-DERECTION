@@ -2,8 +2,7 @@
 
 ---
 
-### 🌐 [👉 CLICK HERE TO OPEN THE LIVE WEB APPLICATION 👈](https://charanbuilds495.github.io/LLM-Halluciation-Detection/)
-**Live Website URL:** [https://charanbuilds495.github.io/LLM-Halluciation-Detection/](https://charanbuilds495.github.io/LLM-Halluciation-Detection/)
+
 
 ---
 
