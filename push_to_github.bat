@@ -5,7 +5,7 @@ echo ====================================================
 echo      TRUTHLENS AI - GITHUB DEPLOYMENT HELPER
 echo ====================================================
 echo Target Repository:
-echo https://github.com/charanbuilds495/LLM-Halluciation-Detection.git
+echo https://github.com/charanbuilds495/LLM-HALLUCIATION-DERECTION.git
 echo ====================================================
 echo.
 
@@ -30,18 +30,25 @@ if %errorlevel% neq 0 (
 :: 2. Push to GitHub
 echo.
 echo [2/3] Pushing all files and branches to GitHub...
-echo Command: git push -u origin main --force
-git push -u origin main --force
+echo Command: git push -u origin main
+git push -u origin main
+set PUSH_EXIT=%errorlevel%
 
-if %errorlevel% equ 0 (
+if %PUSH_EXIT% equ 0 (
+    echo.
+    echo Also syncing to LLM-Halluciation-Detection and enabling GitHub Pages...
+    git push -u https://github.com/charanbuilds495/LLM-Halluciation-Detection.git main
+    gh api -X POST repos/charanbuilds495/LLM-Halluciation-Detection/pages -f build_type=workflow >nul 2>&1
     echo.
     echo ====================================================
     echo [SUCCESS] Your repository is now fully live!
     echo.
-    echo View your GitHub Repository:
+    echo View your GitHub Repositories:
+    echo https://github.com/charanbuilds495/LLM-HALLUCIATION-DERECTION
     echo https://github.com/charanbuilds495/LLM-Halluciation-Detection
     echo.
-    echo View your Live Deployed Web Application:
+    echo View your Live Deployed Web Applications:
+    echo https://charanbuilds495.github.io/LLM-HALLUCIATION-DERECTION/
     echo https://charanbuilds495.github.io/LLM-Halluciation-Detection/
     echo ====================================================
 ) else (
